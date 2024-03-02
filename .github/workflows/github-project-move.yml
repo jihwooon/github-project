@@ -1,0 +1,12 @@
+name: Move Project_card
+
+on:
+  project_card:
+    types: [moved]
+
+jobs:
+  move_column:
+    runs-on: ubuntu-latest
+    name: "MOVE KanbanBoard"
+    steps:
+      - run: echo "test"
