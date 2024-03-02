@@ -1,0 +1,12 @@
+name: Move Project_card
+
+on:
+  project_column:
+    types:
+      - moved
+
+jobs:
+  move_column:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "move card"
