@@ -9,7 +9,7 @@
 #     runs-on: ubuntu-latest
 
 #     steps:
-#       - name: Enable auto-merge for new PRs
+#      
 #         run: |
 #           echo $PR_URL
 #           gh pr merge --auto --merge "$PR_URL"
