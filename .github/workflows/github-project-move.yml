@@ -2,11 +2,12 @@ name: Move Project_card
 
 on:
   project_card:
-    types: [moved]
+    types:
+      - moved
 
 jobs:
   move_column:
+    if: github.event.project_card.column_id == 'PVTI_lAHOBA6wr84AdotUzgNHy2Y'
     runs-on: ubuntu-latest
-    name: "MOVE KanbanBoard"
     steps:
       - run: echo "test"
